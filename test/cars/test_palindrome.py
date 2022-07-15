@@ -42,7 +42,7 @@ class TestPalindrom(unittest.TestCase):
         caplet_engine = SternmanEngine(warning_light_on=warning_light_on)
 
         today = datetime.today().date()
-        last_service_date = today.replace(year=today.year - 3)
+        last_service_date = today.replace(year=today.year - 4)
         spindler_battery = SpindlerBattery(last_service_date=last_service_date, current_date=today)
 
         car = Car(engine=caplet_engine, battery=spindler_battery)
